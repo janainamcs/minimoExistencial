@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Conheca o seu mínimo existencial</title>
+  </head>
+  <body>
+    <header id="header">
+      <h2>Conheca aqui o seu mínimo existencial</h2>
+    </header>
+    <div class="container">
+      <form class="form">
+        <h3>Primeiro, informe a renda bruta da sua família</h3>
+        <label for="rendaBruta">Informe a renda bruta familiar: </label>
+        <input type="text" name="rendaBruta" id="rendaBruta" />
+
+        <h3>Agora, informe suas despesas</h3>
+        <label for="moradia"
+          >Despesas com moradia - Aluguel e/ou condomínio</label
+        >
+        <input type="text" name="moradia" id="moradia" />
+        <hr />
+        <label for="agua">Média de gastos com água e saneamento básico</label>
+        <input type="text" name="agua" id="agua" />
+        <hr />
+        <label for="luz">Média de gastos com energia elétrica</label>
+        <input type="text" name="luz" id="luz" />
+        <hr />
+        <label for="alimentacao">Média de gastos com alimentacao</label>
+        <input type="text" name="alimentacao" id="alimentacao" />
+        <hr />
+        <label for="vestuario">Média de gastos com vestuário</label>
+        <input type="text" name="vestuario" id="vestuario" />
+        <hr />
+        <label for="saude">Média de gastos com saúde</label>
+        <input type="text" name="saude" id="saude" />
+        <hr />
+        <!-- <label for="extras">Média de gastos extras</label>
+                    <input type="text" name="extras" id="extras"> -->
+        <button id="button" type="button" onclick="setValues()">
+          Calcular!
+        </button>
+      </form>
+      <div class="chart">
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div class="info">
+        <h4>Saiba mais:</h4>
+        <p id="saiba-mais"></p>
+      </div>
+      <div class="info">
+        <h4>Você sabia?</h4>
+        <p>
+          O mínimo existencial para uma renda de 1 a 5 salários mínimos
+          representa cerca de 65%
+        </p>
+        <p>
+          Já o mínimo existencial para uma renda de 6 a 10 salários mínimos
+          representa cerca de 50% da renda
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>Desenvolvido por J.M.C.S. Biblioteca do gráfico: Chart.js.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
